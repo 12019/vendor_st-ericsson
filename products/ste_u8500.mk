@@ -58,10 +58,6 @@ ENABLE_FEATURE_SIGNATURE_VERIFICATION ?= false
 # audio.primary should always be hard coded to match TARGET_BOARD_PLATFORM in
 # vendor/st-ericsson/u8500/BoardConfig.mk
 PRODUCT_PACKAGES += STEBluetooth \
-                    LiveWallpapersPicker \
-                    LiveWallpapers \
-                    MagicSmokeWallpapers \
-                    VisualizationWallpapers \
                     libRS \
                     librs_jni \
                     lights.montblanc \
@@ -359,7 +355,6 @@ PRODUCT_COPY_FILES += \
         frameworks/native/data/etc/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml \
         frameworks/native/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml \
         frameworks/native/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml \
-        packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml \
         frameworks/base/data/etc/com.stericsson.hardware.fm.receiver.xml:system/etc/permissions/com.stericsson.hardware.fm.receiver.xml \
         frameworks/base/data/etc/com.stericsson.hardware.fm.transmitter.xml:system/etc/permissions/com.stericsson.hardware.fm.transmitter.xml
 

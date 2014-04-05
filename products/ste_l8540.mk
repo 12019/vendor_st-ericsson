@@ -52,10 +52,6 @@ ENABLE_FEATURE_SIGNATURE_VERIFICATION ?= false
 # audio.primary should always be hard coded to match TARGET_BOARD_PLATFORM in
 # vendor/st-ericsson/u8500/BoardConfig.mk
 PRODUCT_PACKAGES += STEBluetooth \
-                    LiveWallpapersPicker \
-                    LiveWallpapers \
-                    MagicSmokeWallpapers \
-                    VisualizationWallpapers \
                     libRS \
                     librs_jni \
                     lights.montblanc \
@@ -282,9 +278,6 @@ else
 endif
 endif
 
-# Pick up some sounds
-include frameworks/base/data/sounds/AudioPackage2.mk
-
 # Added resources for TextToSpeech utility.
 include external/svox/pico/lang/all_pico_languages.mk
 
@@ -348,7 +341,6 @@ PRODUCT_COPY_FILES += \
         frameworks/native/data/etc/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml \
         frameworks/native/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml \
         frameworks/native/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml \
-        packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml \
         frameworks/base/data/etc/com.stericsson.hardware.fm.receiver.xml:system/etc/permissions/com.stericsson.hardware.fm.receiver.xml \
         frameworks/base/data/etc/com.stericsson.hardware.fm.transmitter.xml:system/etc/permissions/com.stericsson.hardware.fm.transmitter.xml
 
@@ -466,6 +458,3 @@ $(call inherit-product-if-exists, vendor/st-ericsson/tools/platform/USB-PC-drive
 $(call inherit-product-if-exists, vendor/st-ericsson/base_utilities/core/utilities/lua/copy_files.mk)
 $(call inherit-product-if-exists, vendor/st-ericsson/storage/parameter_storage/cspsa_image/copy_files.mk)
 $(call inherit-product-if-exists, vendor/st-ericsson/tools/platform/modem-flashtools/copy_files.mk)
-
-# Google Mobile Services (GMS)
-$(call inherit-product-if-exists, vendor/google/products/gms.mk)

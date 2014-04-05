@@ -48,10 +48,6 @@ ENABLE_FEATURE_SIGNATURE_VERIFICATION ?= false
 # Module names for lights, sensors, gps, gralloc, overlay and copybit should always be
 # hard coded to match TARGET_BOARD_PLATFORM in vendor/st-ericsson/u9500_21/BoardConfig.mk
 PRODUCT_PACKAGES += STEBluetooth \
-                    LiveWallpapersPicker \
-                    LiveWallpapers \
-                    MagicSmokeWallpapers \
-                    VisualizationWallpapers \
                     libRS \
                     librs_jni \
                     lights.montblanc \
@@ -296,7 +292,6 @@ PRODUCT_COPY_FILES += \
         frameworks/base/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
         frameworks/base/data/etc/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml \
         frameworks/base/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
-	 packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml \
         frameworks/base/data/etc/com.stericsson.hardware.fm.receiver.xml:system/etc/permissions/com.stericsson.hardware.fm.receiver.xml \
         frameworks/base/data/etc/com.stericsson.hardware.fm.transmitter.xml:system/etc/permissions/com.stericsson.hardware.fm.transmitter.xml
 
