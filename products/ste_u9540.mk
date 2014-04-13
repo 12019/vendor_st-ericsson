@@ -281,9 +281,6 @@ else
 endif
 endif
 
-# Pick up some sounds
-include frameworks/base/data/sounds/AudioPackage2.mk
-
 # Added resources for TextToSpeech utility.
 include external/svox/pico/lang/all_pico_languages.mk
 
